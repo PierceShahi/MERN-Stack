@@ -1,0 +1,93 @@
+<!DOCTYPE html>               <!--Instruction to web browser about version of html5 that web page is using.-->
+<html lang="en">              <!--Specify the language of the web page. -->
+<head>
+  <meta charset="UTF-8">      <!--Specify the character encoding of the web page.-->
+  <meta http-equiv="X-UA-Compatible" content="">                           <!--Specify the document mode of browser.-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">           <!--Set the viewport of the web page for mobile devices.-->
+  <title>HTML Basics</title>  <!--Defines the title of webpage.-->
+</head>
+<body>
+  Welcome to HTML Basics Introduction!
+  <h1> Header 1 </h1>         <!--Defines headings and sub-headings, it is upto h6.-->
+  <hr>                        <!--To insert a horizontal rule or line on a web page.-->
+  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, architector.    <!--Define a paragraph of text.-->
+    Lorem ipsum dolor sit amet <b> consectetur </b> adipisicing elit.              <!--Define text that should be displayed in bold.-->
+    Lorem <i> Ipsum </i> dolor sit amet consectetur adipisicing elit.              <!--Define text that should be displayed in italic.-->
+    Lorem ipsum dolor sit amet <u> consectetur adipisicing </u> elit.              <!--Define text that should be underlined.-->
+    Lorem ipsum dolor <del> sit amet </del> consectetur adipisicing elit.          <!--Define text that has been deleted or removed from a document.-->
+    Lorem ipsum dolor sit amet <br>  consectetur adipisicing elit.                 <!--Used to insert a line break or newline within a block of text.-->
+  </p>
+
+  H<sub>2</sub>0  <br>        <!--Define subscript text, which appears below the baseline of the surrounding text.-->
+  X<sup>2</sup>0  <br>        <!--Define superscript text, which appears above the baseline of the surrounding text.-->
+
+  <img src="2SVG&Canvas.png" alt="Screenshot" title="Image" width="500" height="300">       <!--Used to insert images into a web page.-->
+  <a href="https://github.com/PierceShahi" target="_blank"> Pawan Github Profile </a><br>                  <!--Used to create hyperlinks or anchor links.-->
+
+  <ul type="circle">          <!--Create an unordered list, which is a list of items that do not have a particular order or sequence-->
+    <li>Home</li>             <!--Define an item in a list.-->
+    <li>Profile</li>
+    <li>Settings</li>
+  </ul>
+  <ol type="A" start="5">     <!--Create an ordered list, which is a list of items that have a particular order or sequence.-->
+    <li>Home</li>
+    <li>Profile</li>
+    <li>Settings</li>
+  </ol>
+
+  <table border="5" cellspacing="2">     <!--Used to create tables on a web page.-->
+    <tr>                                 <!--Define a row in a table.-->
+      <th colspan=""> Name </th>         <!--Define a header cell in a table.-->
+      <th> Class </th>
+      <th> Address </th>
+      <th> Age </th>
+    </tr>
+    <tr>
+      <td rowspan=""> Pawan </td>        <!--Define a data cell in a table.-->
+      <td> 12 </td>
+      <td> Kathmandu </td>
+      <td> 25 </td>
+    </tr>
+    <tr>
+      <td> Sushil </td>
+      <td> 10 </td>
+      <td> New Delhi </td>
+      <td> 20 </td>
+    </tr>
+  </table>
+
+  <form action="" method="post">          <!--Used to create an HTML form for user input.-->
+    Name : <input type="text" value=""><br>
+    DOB : <input type="date" value=""><br>
+    Gender : <input type="radio" name="Gender" value="Male">Male
+             <input type="radio" name="Gender" value="Female">Female<br>
+    Email : <input type="email" value="" required><br>
+    Age : <input type="number" name="Age" min="18" max="60"><br>
+    Profile Image : <input type="file"  name="" id=""><br>
+    Password : <input type="password" name="" id=""><br>
+    <input type="submit" value="Confirm Changes">
+  </form>
+
+  <details>                               <!--Specifies additional details that the user can view or hide on demand.-->
+    <summary>Copyright 1997-2023.</summary>                                        <!--Defines a visible heading for the details element.-->
+    <p> - by Pawan Kumar Thapa. All Rights Reserved.</p>
+    <p> - Please enjoy the Website.</p>
+  </details>
+
+  <figure>                                <!--Specifies self-contained content, like illustrations, diagrams, photo etc.-->
+    <img src="1Semantics.png" alt="Semantic Elements" width="500" height="300">
+    <figcaption>Block Diagram for semantic elements</figcaption>                   <!--Specifies a caption for a figure element-->
+  </figure>
+
+  Downloading Progress: <progress value="22" max="100"> </progress>                <!--Represent the progress of a task.-->
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Qui neque mollitia quibusdam accusantium illo blanditiis impedit ipsa velit doloremque illum. 
+    Quia debitis nulla asperiores dignissimos eius qui eum atque, ipsa praesentium harum amet, 
+    quis vel cumque officia accusantium velit exercitationem autem eos odio fugiat laboriosam? 
+    Molestiae iste necessitatibus est quisquam<wbr>                                <!--Specifies a possible line-break.-->
+    osplaceatnonnamquiacumquePossimuseaquequoconsequaturteneturnam,omnispariaturnonarchitectotemporequiacumeveniet. 
+    Voluptate odio hic cumque culpa assumenda, et porro cum. Quod repellat non quia.autem eos odio ? </p>
+
+</body>
+</html>

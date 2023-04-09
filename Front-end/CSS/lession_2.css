@@ -1,0 +1,92 @@
+.text_effects{                                  /* Implement extra feature on normal text using CSS3. */
+    text-align: center;
+    text-shadow: 2px 2px 2px grey;            /* Create shadow around the text and change color. */
+}
+
+#word_wrap{
+    word-wrap: break-word;                      /* Breaks the continued text in another line. */
+    width: 150px;
+    border: 1px solid black;
+}
+#no_wrap{
+    width: 150px;
+    border: 1px solid black;
+}
+
+.border{
+    width: 100px; height: 70px;
+    border-radius: 10px;                        /* Create rounded corners. */
+    box-shadow: 3px 3px 3px 2px grey;         /* Create the shadow of the border. */
+}
+
+@font-face {                                    /* Can Create different types of font style in CSS3. */
+    font-family: Japanese Font;
+    src: url('../Fonts/Kamikaze.ttf');          /* Format should be ttf(True type font) and otf(Open type font). */
+}
+.font_about{
+    font-family: Japanese Font;
+    font-size: xx-large;
+}
+
+.animation{
+    width: 100%; height: 100px;
+    position: relative;
+}
+.animation img{                                 /* Defines the name and duration of the animation. */
+    width: 200px; height: 170px;
+    position: absolute;
+    left: 0;
+    animation-name: deadpool;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes deadpool{                            /* Bind it to a selector otherwise it will have no effect. */
+    from{left: 0%;}
+    to{left: 85%;}
+}
+
+.transition{                                    /* Changes element gradually from one style to another when hover. */
+    width: 3%; height: 3%;
+    /* transition-property: width, height; */
+    transition-property: transform;
+    transition-duration: 2s;
+    /* transition-timing-function: linear; */
+}
+.transition:hover{
+    /* width: 6%; height: 6%; */
+    transform: scale(2, 2);                     /* Elements increases or decreases the size.
+}
+
+.multi_columns{                                 /* Used for creating newspaper layout. */
+    background-color: aqua;
+    column-count: 3;
+    column-gap: 50px;
+    column-rule: dashed;
+    column-rule-color: green;
+    text-align: justify;
+}
+
+.text_size{
+    resize: horizontal;                         /* Defines if and how an elements is resizable by user. */
+    overflow: auto;
+}
+
+.box_size{
+    width: 300px; height: 100px;
+    /* padding-left: 20px; */
+    transform: translatex(50px);                /* Moves elements from x and y axis. It is used instead of padding and margin. */
+    background-color: aqua;
+    box-sizing: border-box;
+}
+.rotate{
+    text-align: center;
+    transition: transform 2s;
+}
+.rotate:hover{
+    transform: rotate(360deg);                  /* Rotates elements clockwise at a given degree. */
+}
+
+.linear_gradient{
+    background-image: linear-gradient(to right, red, white, grey);          /* Create a gradient effect that transitions between two or more colors in a linear direction. */
+}

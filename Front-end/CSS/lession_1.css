@@ -1,0 +1,159 @@
+/* CSS stands for Cascading Style Sheet. It is used to control the style of a web document in a simple & easy way. It controls the style and layout of multiple web pages all at once. */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: red;
+}
+#heading{                                      /*  This is the id for index.html */
+    color: aqua;
+}
+.heading{                                      /*  This is the class for index.html */
+    color: brown;
+}
+.backimg1{                                     /*  Background property */
+    width: 100%;
+    height: 100vh;
+    background-color: coral;
+    background-image: url('../Media/Images/1image.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.backimg2{
+    width: 100%;
+    height: 100vh;
+    background-color: coral;
+    background-image: url('../Media/Images/2image.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#font{
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    font-size: 2em;
+}
+#text{
+    text-align: center;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    direction: ltr;
+    text-indent: 20px;
+    text-transform: uppercase;
+}
+a:link{                                        /* Unvisited Link */
+    color: blue;
+}
+a:visited{                                     /* Visited Link */
+    color: green;
+}
+a:hover{                                       /* Mouse Hover Link */
+    color: purple;
+}
+a:active{                                      /* Selected Link */
+    color: yellow;
+}
+
+.border{
+    width: 500px;
+    height: 300px;
+    background-color: crimson;
+    /* border-width: 5px;                      /* Specify how the border of the box representing an element should look. */
+    /* border-color: black; */
+    /* border-style: solid; */
+    border: 5px dashed black;
+    border-radius: 20px;                       /* Used to create rounded corners. Its a CSS3 property. */
+}
+
+ul{
+    list-style-type: disc;                     /* Allows to control the shape or appearance of the marker. */
+}
+ol{
+    list-style-type: upper-alpha;
+}
+
+input{
+    background-color: blue;
+    padding: 3px 5px 2px 5px;                  /* It is for inside the box. Order is top-right-bottom-left */
+    margin: 10px;                              /* It is for outside the box. Order is top-right-bottom-left */
+}
+
+p{
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+    border: 2px solid red;
+    overflow: scroll;                         /* Types are visible, hidden, scroll, auto */
+}
+
+.father{
+    width: 400px;
+    height: 200px;
+    background-color: blue;
+    position: relative;                       /* Element is positioned relative to its normal position. */
+}
+.C1{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    position: absolute;                       /* Element is positioned relative to first parent element that has position other than static. */
+    left: 0;
+}
+.C2{
+    width: 100px;
+    height: 50px;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;                               /* Specifies the stack order of an element. Max number is at front */
+}
+.C3{
+    width: 100px;
+    height: 50px;
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.C4{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(116, 10, 10);
+    position: absolute;
+    left: 0;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+}
+.logo{
+    width: 30%;
+    line-height: 50px;
+    text-align: center;
+    background-color: greenyellow;
+    float: left;                              /* Element floats to left & right of its container */
+}
+.menu{
+    width: 50%;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgb(58, 58, 126);
+    float: right;
+}
+ul{
+    list-style: none;
+}
+li{
+    cursor: pointer;                          /* Cursor type */
+    display: inline-block;                    /* Controls Layout- block/inline */
+    padding-left: 0 10px;
+    margin-left: 50px;
+}

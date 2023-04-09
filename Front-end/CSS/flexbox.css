@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    background-color: cyan;
+    flex-direction: row-reverse;                /* Specify the direction of the flexible container and the layout of its items. */
+    align-items: flex-start;                    /* Vertically align elements within a flex container along the cross axis. */
+}
+section div{
+    flex-basis: 30%;                            /* Specifies the initial size of a flex item along the main axis of the flex container. */
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.flexone{
+    flex: 1 0;                                  /* Set the flex-grow and flex-shrink properties all at once */
+    background-color: brown;
+}
+.flextwo{
+    flex: 1 0;
+    background-color: green;
+}
+.flexthree{
+    flex: 1 0;
+    background-color: blueviolet;
+}
+
+@media(min-width: 700px){                       /* Used for showing responsiveness. Styles screen width. */
+    section{
+        display: flex;                          /* Creates a flex container that can be used to apply flexbox layout to its child elements, which will be aligned in a row. */
+        justify-content: space-between;         /* Align and Distribute space between flex items along the main axis of a flex container. */
+    }
+}

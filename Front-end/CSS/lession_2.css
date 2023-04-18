@@ -88,5 +88,5 @@
 }
 
 .linear_gradient{
-    background-image: linear-gradient(to right, red, white, grey);          /* Create a gradient effect that transitions between two or more colors in a linear direction. */
+    background-image: linear-gradient(to right, rgb(206, 84, 84), white, grey);          /* Create a gradient effect that transitions between two or more colors in a linear direction. */
 }
